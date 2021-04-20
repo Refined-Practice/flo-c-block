@@ -1,0 +1,46 @@
+{
+    "name": "refinedpractice/flo-c-block",
+    "description": "Sets the HTTP response header Permissions-Policy: interest-cohort=() on all requests",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "floc block"
+    ],
+    "support": {
+        "docs": "https://github.com/Refined-Practice/flo-c-block/blob/master/README.md",
+        "issues": "https://github.com/Refined-Practice/flo-c-block/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Ratcliffe",
+            "homepage": "https://www.refinedpractice.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "refinedpractice\\flocblock\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "FLoC Block",
+        "handle": "flo-c-block",
+        "developer": "Paul Ratcliffe",
+        "developerUrl": "https://www.refinedpractice.com",
+        "documentationUrl": "https://github.com/Refined-Practice/flo-c-block/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/Refined-Practice/flo-c-block/master/CHANGELOG.md",
+        "class": "refinedpractice\\flocblock\\FlocBlock"
+    }
+}
