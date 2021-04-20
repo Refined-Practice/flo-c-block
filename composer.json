@@ -2,7 +2,7 @@
     "name": "refinedpractice/flo-c-block",
     "description": "Sets the HTTP response header Permissions-Policy: interest-cohort=() on all requests",
     "type": "craft-plugin",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "keywords": [
         "craft",
         "cms",
