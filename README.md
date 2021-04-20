@@ -2,8 +2,6 @@
 
 Sets the HTTP response header Permissions-Policy: interest-cohort=() on all requests
 
-![Screenshot](resources/img/plugin-logo.png)
-
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0-beta.23 or later.
@@ -24,20 +22,13 @@ To install the plugin, follow these instructions.
 
 ## FLoC Block Overview
 
--Insert text here-
+Sets the HTTP response header Permissions-Policy: interest-cohort=() on all requests, that's it! Note that to avoid static files being FLoC'ed you should also add:
 
-## Configuring FLoC Block
-
--Insert text here-
-
-## Using FLoC Block
-
--Insert text here-
-
-## FLoC Block Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
+```
+<IfModule mod_headers.c>
+    Header add Permissions-Policy "interest-cohort=()"
+</IfModule>
+```
+to the .htaccess file in your web root.
 
 Brought to you by [Paul Ratcliffe](https://www.refinedpractice.com)
